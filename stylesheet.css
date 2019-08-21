@@ -1,0 +1,40 @@
+#pyramid {
+    line-height: 0;
+    font-size: 30px;
+    background-color: #EEEEEE;
+    padding: 30px;
+    color: #AA5588;
+    /* border: 2px solid #AA5588;
+    border-radius: 5px; */
+}
+body {
+    font-family: "Courier New", monospace;
+    text-align: center;
+    background-color: #FAFAFA;
+    margin: 0 100px;
+    
+}
+#top-bar {
+    background-color: #AA5588;
+    color: #E3DEDE;
+    padding: 30px;
+    margin: 0 0 30px;
+}
+#form {
+    padding: 30px;
+    background-color: #CCCCCC;
+    /* border: 2px solid #AA5588;
+    border-radius: 5px; */
+}
+#brick-select {
+    font-size: 20px;
+}
+#height-value {
+    font-size: 20px;
+    font-weight: bold;
+}
+#border {
+border: 2px solid #AA5588;
+border-radius: 5px;
+margin: 0 100px;
+}
