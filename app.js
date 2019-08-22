@@ -1,18 +1,8 @@
 const pyramidDiv = document.querySelector("#pyramid");
 
-function heightFunction() {
+function main () {
     let symbol = document.getElementById('brick-select').value;
     let height = document.getElementById('height-select').value; 
-    document.getElementById("height-value").innerHTML = height;
-    pyramidDiv.innerHTML = '';
-    height = parseInt(height);
-    var createP = document.createElement('p')
-    createP.innerHTML = drawPyramid(height, symbol);
-}
-
-function brickSelect() {
-    let symbol = document.getElementById('brick-select').value;
-    let height = document.getElementById('height-select').value;
     document.getElementById("height-value").innerHTML = height;
     pyramidDiv.innerHTML = '';
     height = parseInt(height);

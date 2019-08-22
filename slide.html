@@ -11,14 +11,14 @@
         <div id ="form">
             <form>
                 <label id="brick">Brick Symbol:</label>
-                    <select id="brick-select" form="brick-form" onchange="brickSelect()">
+                    <select id="brick-select" form="brick-form" onchange="main()">
                         <option value="#">#</option>
                         <option value="$">$</option>
                         <option value="@">@</option>
                         <option value="X">X</option>
                     </select>
                 <label id="height">How high?</label>
-                    <input type="range" id="height-select" name="points" min="1" max="20" onchange="heightFunction()">
+                    <input type="range" id="height-select" name="points" min="1" max="20" onchange="main()">
                     <span id="height-value"></span>
                     
             </form>
