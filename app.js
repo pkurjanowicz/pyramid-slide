@@ -1,19 +1,14 @@
 
 var app = new Vue({
-        el: '#app',
-        data: {
-            symbol: '$',
-            height: "10",
-        },
-        computed: {
-            rows() {
-                return drawPyramid(this.height, this.symbol)
-            },
-        },
-        methods: {
-            clearAndRedraw(evt) {
-                evt.preventDefault();
-                this.height = parseInt(this.heightStr);
+    el: '#app',
+    data: {
+        symbol: '$',
+        height: "10",
+    },
+    computed: {
+        //this updates every time the input is changed
+        rows() {
+            return drawPyramid(this.height, this.symbol)
         }
     }
 })
