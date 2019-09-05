@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-</head>
-<body >
-    <div id="app">
+    <head>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    </head>
+    <body >
+        <div id="app">
             <div id='top-bar'>
                 <h1>Pyramid Slide</h1>
             </div>
@@ -12,24 +12,24 @@
                 <div id ="form">
                     <form>
                         <label id="brick">Brick Symbol:</label>
-                            <select id="brick-select" form="brick-form" v-model="symbol" >
-                                <option value="#">#</option>
-                                <option value="$">$</option>
-                                <option value="@">@</option>
-                                <option value="X">X</option>
-                            </select>
+                        <select id="brick-select" form="brick-form" v-model="symbol" >
+                            <option value="#">#</option>
+                            <option value="$">$</option>
+                            <option value="@">@</option>
+                            <option value="X">X</option>
+                        </select>
                         <label id="height">How high?</label>
-                            <input type="range" id="height-select" name="points" min="1" max="20" v-model="height">
-                            <span id="height-value"></span>
-                            
+                        <input type="range" id="height-select" name="points" min="1" max="20" v-model="height">
+                        <span id="height-value"></span>
+
                     </form>
                 </div>
-            <div id="pyramid">
-                <p v-for="row in rows" v-html="row"></p>
+                <div id="pyramid">
+                    <p v-for="row in rows" v-html="row"></p>
+                </div>
             </div>
         </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
-    <script type="text/javascript" src="app.js"></script>
-</body>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+    </body>
 </html>
