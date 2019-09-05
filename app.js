@@ -21,7 +21,7 @@ function drawPyramid(height,symbol) {
 
         let rowStr = "";
         for (let i = 0; i < numSpaces; i++) {
-            let spaceChar = "&nbsp";
+            let spaceChar = "&nbsp;";
             rowStr += spaceChar;
         }
         for (let i = 0; i < numBricks; i++) {
